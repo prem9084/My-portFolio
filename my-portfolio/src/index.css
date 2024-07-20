@@ -1,6 +1,10 @@
 :root {
   --box-shadow: 5px 5px 10px 0px rgba(101, 175, 10, 0.5);
   --bg-color: rgb(40, 47, 97);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +33,19 @@ a {
 
 .nav_bar .nav_items:hover {
   border-bottom: 3px solid yellow;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-left: -1.4rem !important;
+  }
+  .nav_bar .right {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .nav_items {
+    font-size: 9px !important;
+  }
 }
 
 /* Home Section */
@@ -94,6 +111,24 @@ a {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin-left: 0.5rem !important;
+    margin-top: 13rem !important;
+  }
+  .left {
+    width: 22.5rem !important;
+    margin: auto !important;
+  }
+  .right {
+    width: 22.5rem !important;
+    margin: auto !important;
+  }
+}
+
 /* internship */
 
 .internship {
@@ -110,6 +145,16 @@ span {
 }
 .intro {
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .ex {
+    margin-top: 5rem !important;
+    margin-left: 1.6rem !important;
+  }
+  .internship {
+    width: 23rem !important;
+  }
 }
 
 /* Skills */
@@ -139,6 +184,27 @@ span {
 
 .skills .items img {
   width: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills .items {
+    /* display: flex !important; */
+
+    width: 500px;
+    padding: 1rem !important;
+    margin-left: -2.6rem !important;
+  }
+  .items {
+    margin: 0 !important;
+  }
+}
+
+/* project */
+
+@media only screen and (max-width: 768px) {
+  .row {
+    margin-left: 3.5rem !important;
+  }
 }
 
 /* Contect */
@@ -173,4 +239,12 @@ span {
 
 h1 {
   font-family: "Courier New", Courier, monospace !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .contect-icon {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem !important;
+  }
 }

@@ -10,7 +10,7 @@ const Contect = () => {
   return (
     <>
       <div className="container contect mb-5">
-        <h1>CONTECT ME</h1>
+        <h1 className="ms-5">CONTECT ME</h1>
         <div
           className="contect-icon"
           data-aos="zoom-in-up"

@@ -31,5 +31,9 @@
   {
     "title": "MongoDB",
     "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "Express",
+    "imageSrc": "skills/express.png"
   }
 ]

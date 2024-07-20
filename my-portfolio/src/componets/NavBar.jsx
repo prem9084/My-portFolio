@@ -9,7 +9,7 @@ const NavBar = () => {
     >
       <div className="left  nav_items">PortFolieo</div>
 
-      <div className="right ">
+      <div className="right">
         {" "}
         <a href="" className="nav_items">
           Home
